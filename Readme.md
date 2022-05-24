@@ -1,6 +1,6 @@
-﻿## Plan Check June 22 , 06/11, Fortaleza, Brazil 
+﻿## Plan Check June 22 , 07/11, Fortaleza, Brazil 
 
-### João Henrique Martins Castelo and Anselmo Mancini 
+### João Henrique Castelo and Anselmo Mancini 
 
 #### We need 5 checks
 
@@ -20,7 +20,7 @@
 		[X] Check Prescription and Dose Information
 		[X] Dose per day and per session = Total Dose/ nbOfFractions
 		[X] Rounding is important here
-	[] - Match PTV D95 with Doctor prescription /// HomeWork ? 
+	[] - Match PTV D95 with Doctor prescription /// HomeWork ? 😎
 		How ?
 		[] Loop on RT Prescription
 		[] Loop PTV List
