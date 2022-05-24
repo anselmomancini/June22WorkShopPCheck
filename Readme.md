@@ -3,6 +3,9 @@
 ### João Henrique Martins Castelo and Anselmo Mancini 
 
 #### We need 5 checks
+
+	[X] Do not Run the check if Dose is not valid
+	[X] Do not Run the check if there is no RT Prescription
 	[X] - Check if Dicom Origin was changed by an user
 		How ? 
 		[X] - Origin is 0,0,0 if not changed
@@ -12,12 +15,12 @@
 	[X] - Check if MU Factor is larger than 7
 		How ?
 		[X] - Sum all fields MUs and divide it by the dose per fraction in cGy
-	[] - Check the primary reference point dose 
+	[X] - Check the primary reference point dose 
 		How ?
-		[] Check Prescription and Dose Information
-		[] Dose per day and per session = Total Dose/ nbOfFractions
-		[] Rounding is important here
-	[] - Match PTV D95 with Doctor prescription
+		[X] Check Prescription and Dose Information
+		[X] Dose per day and per session = Total Dose/ nbOfFractions
+		[X] Rounding is important here
+	[] - Match PTV D95 with Doctor prescription /// HomeWork ? 
 		How ?
 		[] Loop on RT Prescription
 		[] Loop PTV List
