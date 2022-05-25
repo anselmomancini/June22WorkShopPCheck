@@ -4,8 +4,8 @@
 
 #### We need 5 checks
 
-	[X] Do not Run the check if Dose is not valid
-	[X] Do not Run the check if there is no RT Prescription
+	[X]	- Do not Run the check if Dose is not valid
+	[X] - Do not Run the check if there is no RT Prescription
 	[X] - Check if Dicom Origin was changed by an user
 		How ? 
 		[X] - Origin is 0,0,0 if not changed
@@ -27,3 +27,7 @@
 		[] Check if D95 is within Prescription 90-100% 
 		[] Match PTVs and report to the User 🚀
 
+#### Second Part, User Interface 
+	[X] - Create a screen for a single Check
+	[X] - Translate from the mind to code 
+	[]	- 		
