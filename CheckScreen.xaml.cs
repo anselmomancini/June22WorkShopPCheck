@@ -20,9 +20,49 @@ namespace June22WorkShopPCheck
     /// </summary>
     public partial class CheckScreen : UserControl
     {
-        public CheckScreen()
+
+        public string Title { get; set; }
+
+        public string Result { get; set; }
+        public string Comment { get; set; }
+
+        public Brush ResultColor { get; set; }
+
+        public CheckScreen(string title, string result, string comment)
         {
+            DataContext = this;
+            Title = title;
+            Comment = comment;
+            Result = result;
+
+            if (Result == "OK")
+            {
+                var brush = new SolidColorBrush(Colors.LightGreen);
+
+                ResultColor = brush;
+            }
+            else {
+                var brush = new SolidColorBrush(Colors.LightSalmon);
+
+                ResultColor = brush;
+            }
             InitializeComponent();
+        }
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            if (CommentBlock.Visibility == Visibility.Collapsed)
+            {
+                CommentBlock.Visibility = Visibility.Visible;
+            }
+            else
+            {
+                CommentBlock.Visibility = Visibility.Collapsed;
+            }
+        }
+
+        private void StackPanel_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
+        {
+            Button_Click(sender, e);
         }
     }
 }
